@@ -1,1 +1,2 @@
-This is a GitLab repo for my .vim configuration directory.
+Repository for my Dotfiles.
+That is all.
