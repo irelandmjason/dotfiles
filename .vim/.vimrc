@@ -32,3 +32,7 @@ noremap U <C-R>
 " Sets colorscheme for vim.
 set background=dark
 colorscheme industry
+
+" The following is used for Python3 and Python3 (.py) files.
+
+autocmd BufNewFile *.py 0r /Skeletons/skeleton.py
