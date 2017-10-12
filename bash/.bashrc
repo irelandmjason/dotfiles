@@ -76,8 +76,8 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
@@ -88,7 +88,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -a1'
+alias ll='ls -a1hG --color=auto'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -116,10 +116,16 @@ if ! shopt -oq posix; then
   fi
 fi
 # =============================================================================================
-# Everything below this line has been added by Jason Ireland (ME!).
+# =============================================================================================
 
 #Sets terminal input width to 79.
 COLUMNS=79
 
-#Change termnial prompt to a timestamp + working directory + ">"
+# Change termnial prompt to a timestamp + working directory + ">"
 PS1="[\t]\w>"
+
+# Extra GIT aliases.
+alias gat='git add'
+alias gct='git commit'
+alias gpt='git push'
+alias gst='git status -vu'
