@@ -35,4 +35,4 @@ colorscheme industry
 
 " The following is used for Python3 and Python3 (.py) files.
 
-autocmd BufNewFile *.py 0r /Skeletons/skeleton.py
+autocmd BufNewFile *.py 0r /skeletons/skeleton.py
