@@ -6,28 +6,22 @@ Default Doc String
 """
 
 # ------ Header ------
-# Project name:
-# Creation date: ## @@@ 2017
+# Project name: ex
+# Creation date: 25 OCT 2017
 # Author: Ireland, Jason M.
-# User: jireland
+# User: jmireland
 # Email: Irelandmjason@gmail.com
-# Git:
+# Git: https://github.com/jmireland.language_practice
 # Python Version: 3.5.2
 # ------ /Header ------
 
 
 # ------ Imports ------
-
 # ------ /Imports ------
 
 
-# ------ Global ------
-
-# ------ /Global ------
-
-
 def main():
-    """ The main method acts as a 'driver' for the module."""
+    """ The main function acts as a 'driver' for the module."""
 
 
 

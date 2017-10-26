@@ -2,6 +2,9 @@ filetype plugin indent on
 syntax on
 set secure
 
+" Allows mouse usage, becasue im a heathen. 'a' == all.
+" set mouse=a
+
 " Sets encoding to utf-8.
 set encoding=utf-8
 set fileencoding=utf-8
@@ -53,3 +56,5 @@ colorscheme industry
 
 " The following is used for Python3 and Python3 (.py) files.
 autocmd BufNewFile *.py 0r ~/skeletons/skeleton.py
+" The Following is used for C (.c) files.
+autocmd BufNewFile *.c 0r ~/skeletons/skeleton.c

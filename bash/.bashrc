@@ -129,3 +129,8 @@ alias gat='git add'
 alias gct='git commit'
 alias gpt='git push'
 alias gst='git status -vu'
+
+
+# Alias for .c Compiler all flags
+alias ccall='cc -Wall -Wextra -Wpedantic -Wwrite-strings -Wstack-usage=1024 -Wfloat-equal -Waggregate-return -Winline'
+
