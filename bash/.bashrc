@@ -132,6 +132,9 @@ alias gst='git status -vu'
 alias gbt='git checkout'
 alias gmt='git merge'
 
+# Pip alias. Duh.
+alias pip3='pip'
+
 
 # Alias for .c Compiler all flags
 alias ccall='cc -Wall -Wextra -Wpedantic -Wwrite-strings -Wstack-usage=1024 -Wfloat-equal -Waggregate-return -Winline'

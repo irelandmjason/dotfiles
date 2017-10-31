@@ -58,3 +58,24 @@ colorscheme industry
 autocmd BufNewFile *.py 0r ~/skeletons/skeleton.py
 " The Following is used for C (.c) files.
 autocmd BufNewFile *.c 0r ~/skeletons/skeleton.c
+
+
+" Allows for tab compelting syntax.
+set omnifunc=ccomplete#Complete
+set completeopt=longest,menuone
+set noignorecase
+" Highlighting for compeltion menu.
+highlight Pmenu ctermbg=gray guibg=gray
+highlight Pmenuthumb ctermbg=blue guibg=blue
+highlight PmenuSbar ctermbg=black guibg=black
+highlight PmenuSel ctermbg=blue guibg=blue
+" Function for tab completion AND still use tabbing. Thanks Liam Echlin!
+function! TabComplete()
+	if !strlen(&omnifunc) || strpart(getline('.'), 0, col('.') - 1) =~ '^\s*$' || exists(&paste)
+		return "\<Tab>"
+	else
+		return "\<C-N>"
+	endif
+endfunction
+inoremap <Tab> <C-R>=TabComplete()<CR>
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
