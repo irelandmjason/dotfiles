@@ -129,8 +129,13 @@ alias gat='git add'
 alias gct='git commit'
 alias gpt='git push'
 alias gst='git status -vu'
+alias gbt='git checkout'
+alias gmt='git merge'
 
 
 # Alias for .c Compiler all flags
 alias ccall='cc -Wall -Wextra -Wpedantic -Wwrite-strings -Wstack-usage=1024 -Wfloat-equal -Waggregate-return -Winline'
 
+
+# Alias for completely clearing the screen.
+alias clear='clear;clear'
