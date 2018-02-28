@@ -1,29 +1,22 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+""" Default Doc String """
 
-"""
-Default Doc String
-"""
+#  HEAD
+#  Name:    project
+#  Date:    1 JAN 2018
+#  Author:  Ireland, Jason M.
+#  Email:   Irelandmjason@gmail.com
+#  Git:     github
+#  Version: Python3.5.2
 
-# ------ Header ------
-# Project name: ex
-# Creation date: 25 OCT 2017
-# Author: Ireland, Jason M.
-# User: jmireland
-# Email: Irelandmjason@gmail.com
-# Git: https://github.com/jmireland.language_practice
-# Python Version: 3.5.2
-# ------ /Header ------
-
-
-# ------ Imports ------
-# ------ /Imports ------
+#  IMPORT
 
 
 def main():
-    """ The main function acts as a 'driver' for the module."""
+    """ The main function acts as a 'driver' for the module. """
+    pass
 
-
-
-if __name__ == "__main__"
+#  Allows the module to only run main when this module is the name of the
+#  program beign run.
+if __name__ == "__main__":
     main()
