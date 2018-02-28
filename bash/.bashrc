@@ -124,13 +124,16 @@ COLUMNS=79
 # Change termnial prompt to a timestamp + working directory + ">"
 PS1="[\t]\w>"
 
+# Python Alias for python3 -> 2.7
+alias python=python2.7
+
 # Extra GIT aliases.
 alias gat='git add'
 alias gct='git commit'
 alias gpt='git push'
-alias gst='git status -vu'
+alias gst='git status'
 alias gbt='git checkout'
-alias gmt='git merge'
+alias gmt='git merge --no-ff'
 
 # Pip alias. Duh.
 alias pip3='pip'
@@ -139,6 +142,13 @@ alias pip3='pip'
 # Alias for .c Compiler all flags
 alias ccall='cc -Wall -Wextra -Wpedantic -Wwrite-strings -Wstack-usage=1024 -Wfloat-equal -Waggregate-return -Winline'
 
+#Alias for Byobu
+alias bb='byobu'
+
+# Alias for resizing a byobu window
+alias by='byobu resize -y'
 
 # Alias for completely clearing the screen.
 alias clear='clear;clear'
+
+[[ -n "$DISPLAY" && "$TERM" = "xterm" ]] && export TERM=xterm-256color
