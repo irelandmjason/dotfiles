@@ -324,11 +324,11 @@ noremap ] gt
 noremap [ gT
 
 " The following is used for Python3 and Python3 (.py) files.
-autocmd BufNewFile *.py 0r ~/skeletons/skeleton.py
+autocmd BufNewFile *.py 0r ~/.skeletons/skeleton.py
 " The Following is used for C (.c) files.
-autocmd BufNewFile *.c 0r ~/skeletons/skeleton.c
+autocmd BufNewFile *.c 0r ~/.skeletons/skeleton.c
 " The Following is used for C header (.h) files.
-autocmd BufNewFile *.h 0r ~/skeletons/skeleton.h
+autocmd BufNewFile *.h 0r ~/.skeletons/skeleton.h
 
 " Allows for tab compelting syntax.
 " set omnifunc=ccomplete#Complete
